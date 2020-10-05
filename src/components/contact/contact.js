@@ -1,0 +1,67 @@
+import React from 'react';
+import './contact.css';
+import Title from '../title/title';
+
+function Contact() {
+    return (
+        <div data-aos="fade-right" className="page-container">
+            <Title bgTitle="contact" splitedTitlePart1="get in " splitedTitlePart2="touch" />
+            <div className="sub-container">
+                <div className="contact-details-container">
+                    <div className="contact-details">
+                        <h3>happy to help ..!!</h3>
+                        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                        <div className="contact-item">
+                            <i className="fa fa-envelope-open ic-contacts-dark"></i>
+                            <span className="contact-item-row">
+                                <span className="contact-item-row-key">Email Me</span>
+                                <span className="contact-item-row-val">sagarkale94@gmail.com</span>
+                            </span>
+                        </div>
+                        <div className="contact-item">
+                            <i className="fa fa-phone-square ic-contacts-dark1"></i>
+                            <span className="contact-item-row">
+                                <span className="contact-item-row-key">Call Me</span>
+                                <span className="contact-item-row-val">+91-8551913973</span>
+                            </span>
+                        </div>
+                        <div className="contact-social">
+                            <span className="contact-social-item">
+                                <i className="fa fa-facebook"></i>
+                            </span>
+                            <span className="contact-social-item">
+                                <i className="fa fa-twitter"></i>
+                            </span>
+                            <span className="contact-social-item">
+                                <i className="fa fa-github"></i>
+                            </span>
+                            <span className="contact-social-item">
+                                <i className="fa fa-youtube"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="contact-details-form">
+                        <div className="contact-input">
+                            <label htmlFor="name">Name</label><br />
+                            <input type="text" id="name" placeholder="Enter your name.." />
+                        </div>
+                        <div className="contact-input">
+                            <label htmlFor="email">Email</label><br />
+                            <input type="email" id="email" placeholder="Enter your email.." />
+                        </div>
+                        <div className="contact-input">
+                            <label htmlFor="message">Message</label><br />
+                            <textarea type="text" id="message" placeholder="Enter your message.." />
+                        </div>
+                        <div className="btn-send-msg">
+                            SEND MESSAGE
+                            <i className="fa fa-send ic-about-me" style={{ fontSize: '18px' }}></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div >
+    );
+}
+
+export default Contact;

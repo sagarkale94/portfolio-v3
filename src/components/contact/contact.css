@@ -1,0 +1,127 @@
+.contact-details-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-details{
+    width: 400px;
+}
+
+.contact-details-form{
+    width: 400px;
+    margin-left: 50px;
+}
+
+.contact-details h3{
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase!important;
+    color: #666;
+}
+
+.ic-contacts-dark{
+    font-size: 35px;
+    color: #72b626;
+}
+
+.ic-contacts-dark1{
+    font-size: 40px;
+    color: #72b626;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.contact-item-row-key{
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #666666;
+}
+
+.contact-social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.contact-social-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    color: #666;
+    background: #eee;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-social-item i{
+    font-size: 22px;
+}
+
+.contact-social-item:hover{
+    background-color: #72b626;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.contact-input{
+    margin-top: 20px;
+}
+
+.contact-input input{
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.contact-input textarea{
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.btn-send-msg{
+    border: 1px solid#72b626;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #72b626;
+    width: 170px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ic-about-me{
+    margin-left: 20px;
+    display: none;
+}
+
+.btn-send-msg:hover .ic-about-me{
+    display: inline;
+    transition: 0.5s;
+}
+
+.btn-send-msg:hover{
+    padding-right: 35px;
+    transition: 0.5s;
+}
