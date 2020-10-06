@@ -1,0 +1,60 @@
+.project-container h3{
+    padding: 0;
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+    color: #72b626;
+}
+
+.project-container h1{
+    padding: 0;
+    margin:  0 0 20px 0;
+    font-weight: 500;
+    font-size: 35px;
+    color: #656565;
+}
+
+.project-description-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 100px;
+}
+
+.even{
+    background-color: #f9f9f9;
+}
+
+.odd .project-tech-container{
+    background-color: #ffffff;
+    padding-left: 50px;
+}
+
+.project-tech-container{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-technology-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-technology-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;    
+}
+
+.project-image-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-functionality{
+    padding-right: 30px;
+}
