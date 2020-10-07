@@ -5,6 +5,7 @@ import Toolbar from './layout/toolbar/toolbar';
 import Container from './layout/container/container';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

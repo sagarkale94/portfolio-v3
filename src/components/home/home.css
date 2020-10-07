@@ -83,24 +83,43 @@
     width: 170px;
     margin-top: 20px;
     cursor: pointer;
-    transition: 0.5s;
-}
-
-.ic-about-me{
-    margin-left: 20px;
-    display: none;
-}
-
-.btn-more-about-me:hover .ic-about-me{
-    display: inline;
-    transition: 0.5s;
-}
-
-.btn-more-about-me:hover{
-    padding-right: 35px;
-    transition: 0.5s;
 }
 
 .one-liner{
     margin-top: 10px;
+}
+
+.home-container > .title-container{
+        display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        z-index: 100000;
+        padding: 50px 0px 20px 0px;
+    }
+    .home-message{
+        margin-left: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-img{
+        margin-bottom: 20px;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .one-liner{
+        text-align: center;
+    }
+    .color-block{
+        display: none;
+    }
+    .home-container > .title-container{
+        display: block;
+    }
 }

@@ -6,10 +6,10 @@ function Contact() {
     return (
         <div data-aos="fade-right" className="page-container">
             <Title bgTitle="contact" splitedTitlePart1="get in " splitedTitlePart2="touch" />
-            <div className="sub-container">
-                <div className="contact-details-container">
-                    <div className="contact-details">
-                        <h3>happy to help ..!!</h3>
+            <div className="container sub-container">
+                <div className="row">
+                    <div className="col-md-6 col-xs-12">
+                        <h3>HAPPY TO HELP ..!!</h3>
                         <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                         <div className="contact-item">
                             <i className="fa fa-envelope-open ic-contacts-dark"></i>
@@ -40,7 +40,7 @@ function Contact() {
                             </span>
                         </div>
                     </div>
-                    <div className="contact-details-form">
+                    <div className="col-md-6 col-xs-12">
                         <div className="contact-input">
                             <label htmlFor="name">Name</label><br />
                             <input type="text" id="name" placeholder="Enter your name.." />
@@ -55,7 +55,6 @@ function Contact() {
                         </div>
                         <div className="btn-send-msg">
                             SEND MESSAGE
-                            <i className="fa fa-send ic-about-me" style={{ fontSize: '18px' }}></i>
                         </div>
                     </div>
                 </div>

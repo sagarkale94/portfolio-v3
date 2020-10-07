@@ -2,10 +2,12 @@ import React from 'react';
 import './home.css';
 import WebImg from '../../assets/images/web.png';
 import ProfilePic from '../../assets/images/pic.jpg';
+import Title from '../title/title';
 
 function Home() {
     return (
         <div className="home-container">
+            <Title bgTitle="" splitedTitlePart1="" splitedTitlePart2="" />
             <div className="color-block"></div>
             <div data-aos="fade-right" className="home-main-container">
                 <div className="home-img" style={{ backgroundImage: `url(${ProfilePic})` }}></div>
@@ -19,7 +21,7 @@ function Home() {
                     <div className="one-liner">
                         I'm a Pune based software developer & passionate for javascript and javascript based frameworks.
                     </div>
-                    <span className="btn-more-about-me">MORE ABOUT ME<i className="fa fa-user ic-about-me" style={{ fontSize: '18px' }}></i></span>
+                    <span className="btn-more-about-me">MORE ABOUT ME</span>
                 </div>
             </div>
         </div>

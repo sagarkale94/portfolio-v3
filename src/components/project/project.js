@@ -3,20 +3,20 @@ import './project.css';
 
 const Project = (props) => {
     return (
-        <div className="project-container">
+        <div className="container-fluid">
             {props.isEven ?
-                <section className="project-description-row even">
-                    <div className="project-tech-container">
+                <section className="row even">
+                    <div className="col-md-8 col-xs-12">
                         <div>
                             <h1>{props.projectTitle}</h1>
                         </div>
-                        <div className="project-technology-row">
-                            <div className="project-technology-col">
+                        <div className="row">
+                            <div className="col-md-6 col-xs-12 project-technology-col">
                                 <h3>Frontend</h3>
                                 <span>{props.frontendTech}</span>
                             </div>
                             {props.backendTech.length > 0 ?
-                                <div className="project-technology-col">
+                                <div className="col-md-6 col-xs-12 project-technology-col">
                                     <h3>Backend</h3>
                                     <span>{props.backendTech}</span>
                                 </div>
@@ -28,26 +28,26 @@ const Project = (props) => {
                             <span>{props.description}</span>
                         </div>
                     </div>
-                    <div className="project-image-container">
-                        <img data-aos="fade-left" data-aos-duration="1000" src={props.img} alt="_dms" width="500" height="250px" />
+                    <div className="col-md-4 col-xs-12 img-container">
+                        <img data-aos="fade-left" data-aos-duration="1000" src={props.img} alt="_dms" />
                     </div>
                 </section>
                 :
-                <section className="project-description-row odd">
-                    <div className="project-image-container">
-                        <img data-aos="fade-right" data-aos-duration="1000" src={props.img} alt="_dms" width="500" height="250px" />
+                <section className="row odd">
+                    <div className="col-md-4 col-xs-12 img-container">
+                        <img data-aos="fade-right" data-aos-duration="1000" src={props.img} alt="_dms" />
                     </div>
-                    <div className="project-tech-container">
+                    <div className="col-md-8 col-xs-12">
                         <div>
                             <h1>{props.projectTitle}</h1>
                         </div>
-                        <div className="project-technology-row">
-                            <div className="project-technology-col">
+                        <div className="row">
+                            <div className="col-md-6 col-xs-12 project-technology-col">
                                 <h3>Frontend</h3>
                                 <span>{props.frontendTech}</span>
                             </div>
                             {props.backendTech.length > 0 ?
-                                <div className="project-technology-col">
+                                <div className="col-md-6 col-xs-12 project-technology-col">
                                     <h3>Backend</h3>
                                     <span>{props.backendTech}</span>
                                 </div>

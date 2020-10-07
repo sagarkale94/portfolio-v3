@@ -8,7 +8,7 @@ import Contact from '../../components/contact/contact';
 
 function Container() {
     return (
-        <div className="container">
+        <div className="container-app">
             <Switch>
                 <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
