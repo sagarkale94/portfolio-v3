@@ -105,3 +105,7 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
+.btn-send-msg:hover{
+    background-color: #b6f56e3d;
+}

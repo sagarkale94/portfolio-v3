@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css';
 import Title from '../title/title';
 
 function Contact() {
+
+    useEffect(() => {
+        document.title = 'Contact | Sagar - Portfolio';
+    }, []);
+
     return (
         <div data-aos="fade-right" className="page-container">
             <Title bgTitle="contact" splitedTitlePart1="get in " splitedTitlePart2="touch" />

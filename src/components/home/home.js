@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 import WebImg from '../../assets/images/web.png';
 import ProfilePic from '../../assets/images/pic.jpg';
 import Title from '../title/title';
+import { useHistory } from "react-router-dom";
 
 function Home() {
+
+    const history = useHistory();
+
+    const handleMoreAboutClick = () => {
+        history.push('/about');
+    }
+
+    useEffect(() => {
+        document.title = 'Home | Sagar - Portfolio';
+    }, []);
+
     return (
         <div className="home-container">
             <Title bgTitle="" splitedTitlePart1="" splitedTitlePart2="" />
@@ -21,7 +33,7 @@ function Home() {
                     <div className="one-liner">
                         I'm a Pune based software developer & passionate for javascript and javascript based frameworks.
                     </div>
-                    <span className="btn-more-about-me">MORE ABOUT ME</span>
+                    <span className="btn-more-about-me" onClick={handleMoreAboutClick}>MORE ABOUT ME</span>
                 </div>
             </div>
         </div>

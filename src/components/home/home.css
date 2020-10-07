@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
+.btn-more-about-me:hover{
+    background-color: #b6f56e3d;
+}
+
 .one-liner{
     margin-top: 10px;
 }

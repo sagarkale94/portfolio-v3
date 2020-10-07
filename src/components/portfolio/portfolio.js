@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './portfolio.css';
 import Title from '../title/title';
 import DMS from '../../assets/images/ic_project/dms.png';
@@ -10,6 +10,10 @@ import Lagna from '../../assets/images/ic_project/lagna.png';
 import Project from '../project/project';
 
 function Portfolio() {
+
+    useEffect(() => {
+        document.title = 'Work | Sagar - Portfolio';
+    }, []);
 
     const projectData = [
         {
