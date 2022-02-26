@@ -54,6 +54,15 @@
     margin-top: 15px;
 }
 
+.contact-social a{
+    text-decoration: none;
+    color: #72b626;
+}
+
+.contact-social a:hover{
+    color: white;
+}
+
 .contact-social-item{
     display: flex;
     flex-direction: row;
